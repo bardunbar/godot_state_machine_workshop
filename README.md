@@ -1,2 +1,3 @@
-# godot_state_machine_workshop
-A workbench for a state machine plugin in godot
+# Godot State Machine
+
+An experimental workspace to figure out plugins and editors in Godot

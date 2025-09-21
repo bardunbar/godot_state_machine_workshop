@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkvljfygun3rf"]
+
+[ext_resource type="Script" uid="uid://lsypb768uays" path="res://addons/state_machine/nodes/state_machine.gd" id="1_pw63i"]
+[ext_resource type="Script" uid="uid://kpitcora8v61" path="res://addons/state_machine/nodes/state.gd" id="2_7ykc4"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("1_pw63i")
+metadata/_custom_type_script = "uid://lsypb768uays"
+
+[node name="MainMenu" type="Node" parent="StateMachine"]
+script = ExtResource("2_7ykc4")
+metadata/_custom_type_script = "uid://kpitcora8v61"
+
+[node name="Gameplay" type="Node" parent="StateMachine"]
+script = ExtResource("2_7ykc4")
+metadata/_custom_type_script = "uid://kpitcora8v61"
